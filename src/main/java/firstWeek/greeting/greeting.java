@@ -6,12 +6,17 @@ import java.util.Date;
 
 public class greeting {
     public static void main(String[] args) throws ParseException {
-        greeting("23", "50", "45", "Carlos");
+        greeting("05", "01", "00", "Carlos");
+        greeting("11", "59", "59", "Carlos");
+        greeting("12", "01", "00", "Carlos");
+        greeting("15", "59", "59", "Carlos");
+        greeting("16", "01", "00", "Carlos");
+        greeting("23", "59", "00", "Carlos");
     }
 
-    public static void greeting(String hours, String minutes, String seconds, String name) throws ParseException {
+    public static void greeting(String h, String m, String s, String name) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-        String setTime = hours + ":" + minutes + ":" + seconds;
+        String setTime = h + ":" + m+ ":" + s;
         Date currentTime = sdf.parse(setTime);
         Date morning = sdf.parse("05:00:00");
         Date day = sdf.parse("12:00:00");
