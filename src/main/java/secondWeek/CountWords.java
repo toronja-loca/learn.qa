@@ -1,6 +1,6 @@
 package secondWeek;
 
-public class countWords {
+public class CountWords {
     public static void main(String[] args) {
         String sentence = "Пятница это лучший день";
         int count = 0;

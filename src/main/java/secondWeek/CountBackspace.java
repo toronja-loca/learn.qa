@@ -1,6 +1,6 @@
 package secondWeek;
 
-public class countBackspace {
+public class CountBackspace {
     public static void main(String[] args) {
         String sentence = "Пятница это лучший день";
         int count = 0;
